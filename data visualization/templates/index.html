@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Visualization Website</title>
+    <link rel="stylesheet" href="static\index.css">
+</head>
+<body>
+    <h1>Data Visualization Website</h1>
+    <form method="post" enctype="multipart/form-data" action="/process_data">
+        <label for="data_file">Upload Excel file:</label>
+        <input type="file" id="data_file" name="data_file">
+        <br>
+        <label for="math_pass_marks">Minimum Math Pass Marks:</label>
+        <input type="number" id="math_pass_marks" name="math_pass_marks" step="1" min="0" value="35">
+        <br>
+        <label for="science_pass_marks">Minimum Science Pass Marks:</label>
+        <input type="number" id="science_pass_marks" name="science_pass_marks" step="1" min="0" value="35">
+        <br>
+        <label for="social_pass_marks">Minimum Social Pass Marks:</label>
+        <input type="number" id="social_pass_marks" name="social_pass_marks" step="1" min="0" value="35">
+        <br>
+        <input type="submit" value="Filter and Visualize">
+    </form>
+</body>
+</html>
+

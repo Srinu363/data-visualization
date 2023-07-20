@@ -1,0 +1,32 @@
+/* Reset some default styles for consistency */
+body, h1 {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('path/to/background-nofileprovided.jpeg'); /* Replace with your background image URL */
+    background-size: cover;
+}
+
+
+/* Heading styles */
+.animated-heading {
+    text-align: center;
+    font-size: 40px;
+    color: #007bff;
+    position: relative;
+    animation: moveText 2s infinite alternate;
+}
+
+/* Keyframes for the animation */
+@keyframes moveText {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-20px);
+    }
+}
